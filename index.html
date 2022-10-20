@@ -16,9 +16,9 @@
     <nav>
         <img src="images/Group-2.svg" alt="Hansenberg logo">
         <ul>
-            <li>Oversigt</li>
-            <li>Skole og Praktik</li>
-            <li>Oplev Hansenberg</li>
+            <li><a href="#">Oversigt</a></li>
+            <li><a href="#">Skole og Praktik</a></li>
+            <li><a href="#">Oplev Hansenberg</a></li>
         </ul>
         <a href="#application" class="btn">Ansøg nu</a>
     </nav>
@@ -62,7 +62,7 @@
                 <li class="accordion-item">
                     <div class="accordion-header">
                         <p><strong>Fakta om Grundforløb 2</strong></p>
-                        <div class="accordian-btn btn" onselectstart="return false">Vis mere</div>
+                        <div class="accordian-btn btn" >Vis mere</div>
                     </div>
                     <div class="accordion-content">
                         <p><strong>EKSAMEN OG SVENDEPRØVE</strong></p>
@@ -177,11 +177,33 @@
             <h2>Ansøgning</h2>
             <p>Tilmeld dig Grundforløbet på uddannelsen til Webudvikler</p>
             <form action="">
-                <input type="text" placeholder="Navn" id="inputName">
-                <input type="text" placeholder="E-mail" id="inputEmail">
-                <input type="text" placeholder="Fødselsdato" id="inputBirthday">
-                <input type="text" placeholder="Nuvaerende skole" id="inputSchool">
-                <textarea name="" id="application-text" placeholder="Din ansøgning"></textarea>
+                <input type="text" placeholder="Navn" id="inputName" required>
+                <input 
+                type="text" 
+                placeholder="E-mail" 
+                id="inputEmail" 
+                required
+                >
+                <input 
+                type="text" 
+                placeholder="Fødselsdato" 
+                id="inputBirthday" 
+                required
+                minlength="8"
+                >
+                <input 
+                type="text" 
+                placeholder="Nuvaerende skole" 
+                id="inputSchool" 
+                required
+                >
+                <textarea 
+                name="application-text" 
+                id="application-text" 
+                placeholder="Din ansøgning" 
+                required
+                minlength="50"
+                ></textarea>
                 <button type="submit">Send</button>
             </form>
         </article>

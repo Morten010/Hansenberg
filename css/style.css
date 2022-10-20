@@ -8,6 +8,7 @@
 html{
     font-size: 62.5%;
     font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 h1{
     font-size: 5.6rem;
@@ -37,14 +38,15 @@ nav ul{
     display: flex;
     gap: 4.5rem;
 }
-nav li{
+nav li a{
     color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
+    text-decoration: none;
     text-decoration-color: #E7BE7E;
     transition: text-decoration ease-in-out 0.5s;
 }
-nav li:hover{
+nav li a:hover{
     text-decoration: underline 2px solid #E7BE7E;
     text-underline-offset: 1rem;
 }
@@ -169,7 +171,6 @@ main h1, main h3{
 }
 .accordion-item{
     transition: ease-out 0.3s;
-
 }
 .accordion-item.open {
     background-color: #435061;
@@ -194,6 +195,12 @@ main h1, main h3{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+#school .accordion-item .btn:hover{
+    background-color: rgb(235, 233, 233);
+}
+#school .accordion-item.open .btn:hover{
+    background-color: #e9ca99;
 }
 #school .btn{
     padding: 1.3rem 3.8rem;
