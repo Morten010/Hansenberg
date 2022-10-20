@@ -149,7 +149,12 @@ main h1, main h3{
 }
 #school li{
     border-bottom: 2px solid #CFCFCF;
+}
+#school li.open{
     margin-bottom: 2rem;
+}
+#school li:last-child{
+    margin-bottom: 0rem;
 }
 #school li:last-child{
     border-bottom: none;
