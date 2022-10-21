@@ -440,6 +440,13 @@ footer p{
     #discover h2{
         margin-bottom: 4rem;
     }
+    #discover .discover-line{
+        border-bottom: 2px solid #eeb75f;
+        padding-bottom: 2rem;
+    }
+    #discover .no-mb{
+        margin-bottom: 0;
+    }
 }
 @media (max-width: 800px) {
     #about-it{
