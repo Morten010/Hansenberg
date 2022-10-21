@@ -384,16 +384,6 @@ footer p{
         width: 47%;
         overflow: hidden;
     }
-
-    #discover .discover-flex{
-        flex-direction: column;
-    }
-    #discover .discover-flex div{
-        width: 100%;
-    }
-#discover .discover-flex strong{
-        text-align: center;
-    }
     #school .btn{
         padding: 1rem 2rem;
     }
@@ -433,6 +423,21 @@ footer p{
 @media (max-width: 1080px) {
     section{
         padding: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    #discover .discover-flex{
+        flex-direction: column;
+    }
+    #discover .discover-flex div{
+        width: 100%;
+        padding: 0 4rem;
+    }
+    #discover .discover-flex{
+        text-align: center;
+    }
+    #discover h2{
+        margin-bottom: 4rem;
     }
 }
 @media (max-width: 800px) {
