@@ -30,10 +30,9 @@ nav{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    overflow: hidden;
     margin-top: 3.8rem;
 }
-nav ul{
+.nav-list{
     list-style-type: none;
     display: flex;
     gap: 4.5rem;
@@ -97,8 +96,39 @@ main h1, main h3{
     color: #fff;  
     text-align: center;
 }
-
-
+.burger-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 30vh;
+    background-color: #435061;
+    text-align: end;
+    display: none;
+}
+nav.open .burger-menu{
+    display: inline-block;
+}
+.burger-menu ul{
+    padding-top: 3rem;
+    list-style-type: none;
+}
+.burger-menu li a, .burger-menu i{
+    display: inline-block;
+    padding: 1rem 2rem 1rem 1rem;
+    width: 100%;
+}
+.burger-menu li a:hover, .burger-menu i:hover{
+    border-bottom: solid 2px #eeb75f;
+    background-color: #3c4755;
+    text-decoration: none;
+}
+/* .burger-menu li{
+    padding: 1rem 2rem;
+} */
+/* .burger-menu li:hover{
+    background-color: #3c4755;
+} */
 #about-it{
     display: flex;
     max-width: 108rem;
@@ -374,9 +404,8 @@ footer p{
 @media (max-width: 900px) {
     nav .fa-bars{
         display: block;
-        
     }
-    nav ul{
+    .nav-list{
         display: none;
     }
     nav .btn{
