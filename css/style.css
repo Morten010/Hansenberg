@@ -374,7 +374,7 @@ footer p{
     line-height: 2.2rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     #about-it{
         gap: 1rem;
     }
@@ -389,7 +389,13 @@ footer p{
         padding: 1rem 2rem;
     }
     .accordion-header{
-        gap: 5%;
+        gap: 2%;
+    }
+    .accordion-header p{
+        width: 60%;
+    }
+    .accordion-header div{
+        width: 40%;
     }
 }
 @media (max-width: 900px) {
