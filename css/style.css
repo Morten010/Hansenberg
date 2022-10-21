@@ -196,6 +196,7 @@ main h1, main h3{
     border-bottom: 2px solid #E7BE7E;
 }
 #school .accordion-item .btn{
+    text-align: center;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
