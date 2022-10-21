@@ -29,7 +29,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 99vw;
+    width: 100%;
     overflow: hidden;
     margin-top: 3.8rem;
 }
@@ -267,6 +267,7 @@ main h1, main h3{
 }
 #application{
     text-align: center;
+    width: 100%;
 }
 #application h2{
     margin-bottom: 2.8rem;
