@@ -313,6 +313,7 @@ nav.open .burger-menu{
 form input, form textarea{
     padding: 1.3rem 1.6rem 1.3rem 1.6rem;
     border: .2rem solid black;
+    border-radius: 0;
 }
 form input:focus{
     outline: none;
