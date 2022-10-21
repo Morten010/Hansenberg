@@ -61,6 +61,13 @@ nav .btn{
 nav .btn:hover{
     background-color: #eeb75f;
 }
+nav i{
+    font-size: 1.6rem;
+    color: white;
+}
+nav .fa-bars{
+    display: none ;
+}
 main{
     height: 100vh;
     position: relative;
@@ -128,7 +135,7 @@ main h1, main h3{
     color: #3D3D3D;
 }
 #school article{
-    width: 108rem;
+    max-width: 108rem;
     padding: 6rem 0;
     margin: 0 auto;
 
@@ -248,6 +255,7 @@ main h1, main h3{
 #application{
     background-color: #E7BE7E;
     color: #435061;
+    width: 100vw;
 }
 #application article{
     max-width: 108rem;
@@ -329,4 +337,64 @@ footer h2{
 }
 footer p{
     line-height: 2.2rem;
+}
+
+@media (max-width: 400px) {
+    #about-it{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #about-it article, #about-it aside{
+        width: 100%;
+    }
+    #about-it aside{
+        padding: 2rem;
+    }
+    #about-it .pair img{
+        width: 47%;
+        overflow: hidden;
+    }
+    section{
+        padding: 2rem;
+    }
+    #discover .discover-flex{
+        flex-direction: column;
+    }
+    #discover .discover-flex div{
+        width: 100%;
+    }
+#discover .discover-flex strong{
+        text-align: center;
+    }
+    #application form{
+        width: 100%;
+        grid-template-columns: 49% 49%;
+        gap: 2%;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container div{
+        margin-bottom: 3rem;
+    }
+
+}
+@media (max-width: 900px) {
+    nav .fa-bars{
+        display: block;
+        
+    }
+    nav ul{
+        display: none;
+    }
+    nav .btn{
+        display: none;
+    }
+    nav img{
+        height: 3rem;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 0 10%;
+    }
 }
