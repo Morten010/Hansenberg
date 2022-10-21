@@ -363,6 +363,12 @@ footer p{
 #discover .discover-flex strong{
         text-align: center;
     }
+    #school .btn{
+        padding: 1rem 2rem;
+    }
+    .accordion-header{
+        gap: 5%;
+    }
 }
 @media (max-width: 900px) {
     nav .fa-bars{
@@ -406,5 +412,14 @@ footer p{
     }
     #about-it article, #about-it aside{
         width: 100%;
+    }
+}
+@media (max-width: 375px) {
+    main h1{
+        font-size: 4rem;
+    }
+    main h3{
+        font-size: 1.6em;
+        font-weight: 400;
     }
 }
