@@ -115,7 +115,7 @@ nav.open .burger-menu{
 }
 .burger-menu li a, .burger-menu i{
     display: inline-block;
-    padding: 1rem 2rem 1rem 1rem;
+    padding: 1rem 10vh 1rem 1rem;
     width: 100%;
 }
 .burger-menu li a:hover, .burger-menu i:hover{
