@@ -315,6 +315,7 @@ form input, form textarea{
     border: .2rem solid black;
     border-radius: 0;
     width: 100%;
+    appearance: none;
 }
 form input:focus{
     outline: none;
